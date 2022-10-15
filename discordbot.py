@@ -9,8 +9,7 @@ import re
 import discord
 
 # Botのアクセストークン 環境変数から
-# TOKEN = os.environ['CRAFTBOT_TOKEN']
-TOKEN = "MTAyODAwNDQ2MTkwNzU0NjE3Mg.GV4AA9.72v0bSgIAZwyrQ752NlckYw55KGbUHu5AaUpvw"
+TOKEN = os.environ['CRAFTBOT_TOKEN']
 
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
