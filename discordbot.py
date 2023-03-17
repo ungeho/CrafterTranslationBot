@@ -11,8 +11,11 @@ import discord
 # Botのアクセストークン 環境変数から
 TOKEN = os.environ['CRAFTBOT_TOKEN']
 
+# Intentsオブジェクトを生成
+# 全てのIntentをTrue
+intents = discord.Intents.all()
 # 接続に必要なオブジェクトを生成
-client = discord.Client()
+client = discord.Client(intents=intents)
 
 # 日本語のクラフタースキル名の読み込み
 def read_CraftSkillsName_JP():
